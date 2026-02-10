@@ -9,10 +9,10 @@
 
 <body>
 
-<audio autoplay loop>
+<audio id="bgMusic" loop>
     <source src="music.mp3" type="audio/mpeg">
 </audio>
-
+    
 <canvas id="fireworks"></canvas>
 
 <div class="card" id="card">
@@ -45,6 +45,8 @@ function moveNo(){
 }
 
 function yesClicked(){
+    document.getElementById("bgMusic").play();
+
     document.getElementById("card").innerHTML = `
         <h1>Yayyy 💕</h1>
         <p>Krishna is my Valentine forever ❤️</p>
